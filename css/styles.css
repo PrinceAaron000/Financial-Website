@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    /* background: gray; */
+    height: 100vh;
+
+    /* Grid */
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "navigation navigation"
+    "sidebar mainpage"
+    "sidebar mainpage"
+    "footer footer";
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 60px 60px 1fr 1fr 50px;
+}
+.header{
+    grid-area: header;
+    /* background-color: blue; */
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana;
+    font-weight: 50px;
+    padding: 10px;
+
+}
+.banner{
+    position: absolute;
+    display: inline;
+    margin-left: 33%;
+
+}
+.links-container{
+    float: right;
+    padding: 20px;
+    margin-right: 10px;
+}
+.txt-link{
+    color: white;
+    font-family: Verdana;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 40px;
+    transition: 0.5s;
+}
+.txt-link:hover{
+    background: white;
+    color: red;
+    font-size: 17px;
+}
+.navbar{
+    grid-area: navigation;
+    /* background-color: red; */
+    background-color: black;    
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 50px;
+
+}
+.side-bar{
+    color: white;
+    font-size: 12px;
+    font-family: Verdana;
+    display: block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.side-bar:hover{
+    background: white;
+    color: red;
+}
+.main-content{
+    grid-area: mainpage;
+    /* background-color: skyblue; */
+}
+.container-1{
+    /* background: red; */
+    display: inline-block;
+    margin: 20px;
+    margin-left: 7%;
+}
+.container-2{
+    /* background: red; */
+    display: inline-block;
+    margin: 20px;
+    margin-left: 7%;
+}
+.container-3{
+    /* background: red; */
+    display: inline-block;
+    margin: 20px;
+    margin-left: 7%;    
+}
+p{
+    font-size: 15px;    
+    
+
+}
+.footer{
+    grid-area: footer;
+    background-color: black;
+}
+.footer-txt{
+    font-family: Verdana;
+    color: white;
+    padding: 17px;
+    text-align: center;
+}
+.finance-icon{
+    margin-left: 60px;
+}
+i{
+    margin-right: 5px;
+}
